@@ -4,14 +4,14 @@ class HomeController < ApplicationController
 
   def index
 
-    array = Faker::Lorem.sentence(2000).split(" ")
+    array = Faker::Lorem.sentence(100).split(" ")
 
     p array.to_s
 
     p "empieza..."
     i=1
     a=Time.now
-    @total= 5000000
+    @total= 500000
 
     @total.times do |t|
       #puts i.to_s
